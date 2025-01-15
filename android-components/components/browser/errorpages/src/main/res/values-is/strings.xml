@@ -103,8 +103,8 @@
     <string name="mozac_browser_errorpages_redirect_loop_message"><![CDATA[
       <p>Vafrinn hefur hætt að reyna að ná í umbeðinn hlut. Vefsvæðið er að endursenda beiðnina á þann hátt að því mun aldrei ljúka.</p>
       <ul>
-        <li>Hefurðu lokað á eða gert smákökur óvirkar frá þessu vefsvæð?</li>
-        <li>Ef þú velur að taka á móti smákökum frá þessu vefsvæði og það lagar ekki vandamálið, er netþjónninn sjálfur líklega rangt stilltur en ekki tölvan þín.</li>
+        <li>Hefurðu lokað á eða gert vefkökur óvirkar frá þessu vefsvæð?</li>
+        <li>Ef þú velur að taka á móti vefkökum frá þessu vefsvæði og það lagar ekki vandamálið, er netþjónninn sjálfur líklega rangt stilltur en ekki tölvan þín.</li>
       </ul>]]></string>
 
     <!-- The document title and heading of the error page shown when a website cannot be loaded because the browser is in offline mode. -->
@@ -183,9 +183,12 @@
       </ul>]]></string>
 
     <!-- The document title and heading of an error page. -->
-    <string name="mozac_browser_errorpages_no_internet_title">Engin internet tenging</string>
+    <string name="mozac_browser_errorpages_no_internet_title_2">Það virðist vera vandamál með nettenginguna þína</string>
     <!-- The main body text of this error page. It will be shown beneath the title -->
-    <string name="mozac_browser_errorpages_no_internet_message">Athugaðu nettenginguna þína eða reyndu að endurglæða síðuna eftir nokkrar mínútur.</string>
+    <string name="mozac_browser_errorpages_no_internet_message_2">Prófaðu að tengjast í öðru tæki. Athugaðu mótaldið þitt eða beininn. Aftengdu og tengdu aftur við Wi-Fi.</string>
+    <!-- The document title and heading of an error page. -->
+    <string name="mozac_browser_errorpages_no_internet_error_code">Villukóði: NS_ERROR_OFFLINE</string>
+
     <!-- Text that will show up on the button at the bottom of the error page -->
     <string name="mozac_browser_errorpages_no_internet_refresh_button">Endurglæða</string>
 

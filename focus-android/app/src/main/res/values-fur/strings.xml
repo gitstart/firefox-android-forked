@@ -54,7 +54,6 @@
     <string name="menu_remove_from_shortcuts">Gjave des scurtis</string>
 
     <!-- Menu item: Shows information about features and changes that are new to this version -->
-    <string name="menu_whats_new">Novitâts</string>
     <string name="menu_settings">Impostazions</string>
     <string name="menu_about">Informazions</string>
     <string name="menu_help">Jutori</string>
@@ -88,10 +87,12 @@
          sharing an URL. -->
     <string name="share_dialog_title">Condivît vie</string>
 
-    <!-- While a browsing session is active (in the foreground or background) we will show a notification
-         so that the user doesn't forget about the website still being open. This text is shown in
-         the notification. Clicking the notification will have the same effect as clicking the "erase"
-         button in the application. -->
+    <string name="notification_erase_title_android_14">Scancelâ la cronologjie di navigazion?</string>
+
+    <!-- Text shown in the notification description that pops up to remind the user that a browsing session is active
+    for Android 14+. -->
+    <string name="notification_erase_text_android_14_1">Tocje o fâs scori cheste notifiche par eliminâ in mût sigûr la tô cronologjie di navigazion.</string>
+
     <string name="notification_erase_text">Scancele la cronologjie di navigazion</string>
 
     <!-- Notification action to open Focus and resume the current browsing session. -->
@@ -124,23 +125,23 @@
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
          Focus is hard coded since we can't use variables in this context.
          Do not translate or transliterate Focus.-->
-    <string name="text_selection_search_action_focus">Cîr in Focus</string>
+    <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Cîr in Focus</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
              Klar is hard coded since we can't use variables in this context.
              Do not translate or transliterate Klar.-->
-    <string name="text_selection_search_action_klar">Cîr in Klar</string>
+    <string name="text_selection_search_action_klar" tools:ignore="BrandUsage">Cîr in Klar</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
             Focus Beta is hard coded since we can't use variables in this context.
             Do not translate or transliterate Focus Beta.-->
-    <string name="text_selection_search_action_focus_beta">Cîr in Focus Beta</string>
+    <string name="text_selection_search_action_focus_beta" tools:ignore="BrandUsage">Cîr in Focus Beta</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
           Focus Nightly is hard coded since we can't use variables in this context.
           Do not translate or transliterate Focus Nightly.-->
-    <string name="text_selection_search_action_focus_nightly">Cîr in Focus Nightly</string>
+    <string name="text_selection_search_action_focus_nightly" tools:ignore="BrandUsage">Cîr in Focus Nightly</string>
 
     <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
-    <string name="about_content"><![CDATA[<p>%1$s ti met al comant.</p>
+    <string name="about_content" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[<p>%1$s ti met al comant.</p>
 <p>Doprilu come navigadôr privât:
   <ul>
     <li>Cîr e navighe dret de app</li>
@@ -490,9 +491,6 @@
 
     <string name="error_hostLookup_title">Impussibil contatâ il servidôr</string>
 
-    <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
-    <string name="onboarding_close_button_content_description">Siere</string>
-
     <!-- New Onboarding flow first screen title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
     <string name="onboarding_first_screen_title">Benvignûts su %1$s</string>
@@ -581,9 +579,12 @@
     <!-- Label for a button in the "tabs tray" to erase the browsing history (closes all tabs and removes associated data). -->
     <string name="tabs_tray_action_erase">Scancele cronologjie di navigazion</string>
 
+    <!-- Label for the option in the Focus "tabs tray" to clos the other tabs except the current tab. -->
+    <string name="tabs_tray_action_erase_other">Siere chês altris schedis</string>
+
     <!-- If the user decides to open the current page in another browser and if Firefox is not installed then we show this
       item in the list of browsers. Clicking it will open the app store installed on the device (usually that's Google Play). -->
-    <string name="download_firefox">Discjame Firefox</string>
+    <string name="download_firefox" tools:ignore="BrandUsage">Discjame Firefox</string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)-->
@@ -592,23 +593,23 @@
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the MPL (e.g. https://www.mozilla.org/en-US/MPL/) -->
-    <string name="your_rights_content2"><![CDATA[%1$s al è disponibil sot i tiermis de <a href="%2$s">Mozilla Public License</a> e altris licencis Open Source.]]></string>
+    <string name="your_rights_content2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s al è disponibil sot i tiermis de <a href="%2$s">Mozilla Public License</a> e altris licencis Open Source.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the trademark policy (e.g. https://www.mozilla.org/foundation/trademarks/policy/) -->
-    <string name="your_rights_content3"><![CDATA[Mozilla nol atribuìs al utent nissun dirit o licence su la utilizazion des marchis regjistradis di Mozilla Foundation o di altris sogjets, includûts i nons Mozilla, Firefox, %1$s o i logos. Al è pussibil cjatâ altris informazions <a href="%2$s">achì</a>.]]></string>
+    <string name="your_rights_content3" tools:ignore="BrandUsage,IncorrectStraightDoubleQuote"><![CDATA[Mozilla nol atribuìs al utent nissun dirit o licence su la utilizazion des marchis regjistradis di Mozilla Foundation o di altris sogjets, includûts i nons Mozilla, Firefox, %1$s o i logos. Al è pussibil cjatâ altris informazions <a href="%2$s">achì</a>.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the list of licenses used by the dependencies.-->
-    <string name="your_rights_content4"><![CDATA[Codiç sorzint adizionâl par %1$s al è disponibil sot altris varis <a href="%2$s">licencis</a> libaris e open source.]]></string>
+    <string name="your_rights_content4" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[Codiç sorzint adizionâl par %1$s al è disponibil sot altris varis <a href="%2$s">licencis</a> libaris e open source.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the GPL
     %3$s will be replaced with a URL linking to the tracking protection wiki page (e.g. https://wiki.mozilla.org/Security/Tracking_protection#Lists) -->
-    <string name="your_rights_content5"><![CDATA[%1$s al dopre ancje listis di bloc dadis fûr di Disconnect, Inc. in cualitât di opare separade e indipendente, distribuide sot i tiermins de <a href="%2$s">GNU General Public License v3</a> e disponibil <a href="%3$s">achì</a>.]]></string>
+    <string name="your_rights_content5" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s al dopre ancje listis di bloc dadis fûr di Disconnect, Inc. in cualitât di opare separade e indipendente, distribuide sot i tiermins de <a href="%2$s">GNU General Public License v3</a> e disponibil <a href="%3$s">achì</a>.]]></string>
 
     <!-- Text shown in prompts for GeckoView -->
     <string name="gv_prompt_username_hint">Non utent</string>
@@ -799,13 +800,13 @@
     <string name="preference_studies">Studis</string>
 
     <!-- Preference for studies summary-->
-    <string name="preference_studies_summary">Firefox al pues instalâ e puartâ indenant studis di cuant in cuant.</string>
+    <string name="preference_studies_summary" tools:ignore="BrandUsage">Firefox al pues instalâ e puartâ indenant studis di cuant in cuant.</string>
 
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">Plui informazions</string>
 
     <!-- Dialog message shown when some changes are made on studies -->
-    <string name="studies_restart_app">La aplicazion e jessarà par aplicâ lis modifichis</string>
+    <string name="studies_restart_app" moz:removedIn="135">La aplicazion e jessarà par aplicâ lis modifichis</string>
 
     <!-- Title of the remove studies button -->
     <string name="studies_remove">Gjave</string>
@@ -900,9 +901,6 @@
 
     <!-- Label for the button in the snackbar that switches to the newly opened tab -->
     <string name="open_new_tab_snackbar">Passe a</string>
-
-    <!-- Text displayed in a notification when the user enters full screen mode -->
-    <string name="full_screen_notification">Daûr a jentrâ in modalitât plen schermi</string>
 
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Passe dret al colegament te gnove schede</string>
@@ -1004,7 +1002,7 @@
 
     <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will get replaced with the name of the app (e.g. "Firefox Focus").
         Contains a button that will redirect the user to Privacy & Security Screen-->
-    <string name="errorpage_httpsonly_message2"><![CDATA[Cuant che al è pussibil %1$s al cîr di doprâ une conession HTTPS par vê plui sigurece.
+    <string name="errorpage_httpsonly_message2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[Cuant che al è pussibil %1$s al cîr di doprâ une conession HTTPS par vê plui sigurece.
      <a href="%2$s">Plui informazions</a> <br/><br/>
      Modifiche cheste impostazion in Impostazions > Riservatece e sigurece > Sigurece.]]></string>
 
@@ -1075,4 +1073,12 @@
     <!-- This is te text of the snackbar that appears after the search widget was added successfully
     to the home screen. -->
     <string name="promote_search_widget_snackbar_message">Widget zontât ae pagjine principâl</string>
+
+    <!-- Messages explaining how to exit fullscreen mode -->
+    <!-- Message shown to explain how to exit fullscreen mode when gesture navigation is enabled. -->
+    <!-- Localisation note: this text should be as short as possible, max 68 chars -->
+    <string name="exit_fullscreen_with_gesture_short">Strissine di parsore e dopre il mot indaûr par lâ fûr</string>
+    <!-- Message shown to explain how to exit fullscreen mode when using back button navigation. -->
+    <!-- Localisation note: this text should be as short as possible, max 68 chars -->
+    <string name="exit_fullscreen_with_back_button_short">Strissine di parsore e frache indaûr par lâ fûr</string>
 </resources>

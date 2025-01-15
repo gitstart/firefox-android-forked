@@ -53,7 +53,6 @@
     <string name="menu_remove_from_shortcuts">바로가기에서 제거</string>
 
     <!-- Menu item: Shows information about features and changes that are new to this version -->
-    <string name="menu_whats_new">새로운 기능</string>
     <string name="menu_settings">설정</string>
     <string name="menu_about">정보</string>
     <string name="menu_help">도움말</string>
@@ -84,10 +83,12 @@
          sharing an URL. -->
     <string name="share_dialog_title">다음으로 공유</string>
 
-    <!-- While a browsing session is active (in the foreground or background) we will show a notification
-         so that the user doesn't forget about the website still being open. This text is shown in
-         the notification. Clicking the notification will have the same effect as clicking the "erase"
-         button in the application. -->
+    <string name="notification_erase_title_android_14">방문 기록을 삭제하시겠습니까?</string>
+
+    <!-- Text shown in the notification description that pops up to remind the user that a browsing session is active
+    for Android 14+. -->
+    <string name="notification_erase_text_android_14_1">이 알림을 탭하거나 스와이프하면 인터넷 사용 기록이 안전하게 삭제됩니다.</string>
+
     <string name="notification_erase_text">방문 기록 지우기</string>
 
     <!-- Notification action to open Focus and resume the current browsing session. -->
@@ -121,23 +122,23 @@
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
          Focus is hard coded since we can't use variables in this context.
          Do not translate or transliterate Focus.-->
-    <string name="text_selection_search_action_focus">Focus에서 검색</string>
+    <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Focus에서 검색</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
              Klar is hard coded since we can't use variables in this context.
              Do not translate or transliterate Klar.-->
-    <string name="text_selection_search_action_klar">Klar에서 검색</string>
+    <string name="text_selection_search_action_klar" tools:ignore="BrandUsage">Klar에서 검색</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
             Focus Beta is hard coded since we can't use variables in this context.
             Do not translate or transliterate Focus Beta.-->
-    <string name="text_selection_search_action_focus_beta">Focus Beta에서 검색</string>
+    <string name="text_selection_search_action_focus_beta" tools:ignore="BrandUsage">Focus Beta에서 검색</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
           Focus Nightly is hard coded since we can't use variables in this context.
           Do not translate or transliterate Focus Nightly.-->
-    <string name="text_selection_search_action_focus_nightly">Focus Nightly에서 검색</string>
+    <string name="text_selection_search_action_focus_nightly" tools:ignore="BrandUsage">Focus Nightly에서 검색</string>
 
     <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
-    <string name="about_content"><![CDATA[<p>%1$s를 여러 기능으로 사용할 수 있습니다.</p>
+    <string name="about_content" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[<p>%1$s를 여러 기능으로 사용할 수 있습니다.</p>
 <p>개인 정보 보호 브라우저로 사용:
   <ul>
     <li>앱에서 바로 검색과 브라우징 하기</li>
@@ -350,7 +351,7 @@
     <string name="preference_mozilla_telemetry_summary2">Mozilla는 %1$s 이용에 더 나은 서비스를 제공하고 향상시키는 데 오직 필요한 정보만을 수집합니다.</string>
 
     <!-- In-app link (in settings) to Focus privacy notice. -->
-    <string name="preference_privacy_notice">개인 정보 보호 정책</string>
+    <string name="preference_privacy_notice">개인정보 보호정책</string>
 
     <!-- In-app link (in settings) to Focus licensing information. -->
     <string name="preference_licensing_info">라이선스 정보</string>
@@ -512,10 +513,7 @@
 
 
 
-  <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
-    <string name="onboarding_close_button_content_description">닫기</string>
-
-    <!-- New Onboarding flow first screen title -->
+  <!-- New Onboarding flow first screen title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
     <string name="onboarding_first_screen_title">%1$s에 오신 것을 환영합니다</string>
 
@@ -603,9 +601,12 @@
     <!-- Label for a button in the "tabs tray" to erase the browsing history (closes all tabs and removes associated data). -->
     <string name="tabs_tray_action_erase">방문 기록 삭제</string>
 
+    <!-- Label for the option in the Focus "tabs tray" to clos the other tabs except the current tab. -->
+    <string name="tabs_tray_action_erase_other">다른 탭 닫기</string>
+
     <!-- If the user decides to open the current page in another browser and if Firefox is not installed then we show this
       item in the list of browsers. Clicking it will open the app store installed on the device (usually that's Google Play). -->
-    <string name="download_firefox">Firefox 다운로드</string>
+    <string name="download_firefox" tools:ignore="BrandUsage">Firefox 다운로드</string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)-->
@@ -617,23 +618,23 @@
   <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the MPL (e.g. https://www.mozilla.org/en-US/MPL/) -->
-    <string name="your_rights_content2"><![CDATA[%1$s는 <a href="%2$s">Mozilla 공개 라이선스</a> 및 기타 다른 오픈 소스 라이선스 이용 약관에 따라 제공됩니다.]]></string>
+    <string name="your_rights_content2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s는 <a href="%2$s">Mozilla 공개 라이선스</a> 및 기타 다른 오픈 소스 라이선스 이용 약관에 따라 제공됩니다.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the trademark policy (e.g. https://www.mozilla.org/foundation/trademarks/policy/) -->
-    <string name="your_rights_content3"><![CDATA[귀하는 Mozilla와 Firefox, %1$s 명칭이나 로고를 포함한 Mozilla 재단 및 다른 서비스 제공자 소유의 지적재산권으로 보호받는 권리나 라이선스가 부여되는 것이 아님을 인지하셔야 합니다. 추가적인 정보는 <a href="%2$s">다음</a>을 참고하시기 바랍니다.]]></string>
+    <string name="your_rights_content3" tools:ignore="BrandUsage,IncorrectStraightDoubleQuote"><![CDATA[귀하는 Mozilla와 Firefox, %1$s 명칭이나 로고를 포함한 Mozilla 재단 및 다른 서비스 제공자 소유의 지적재산권으로 보호받는 권리나 라이선스가 부여되는 것이 아님을 인지하셔야 합니다. 추가적인 정보는 <a href="%2$s">다음</a>을 참고하시기 바랍니다.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the list of licenses used by the dependencies.-->
-    <string name="your_rights_content4"><![CDATA[%1$s의 소스 코드는 기타 다양한 무료 및 오픈 소스 <a href="%2$s">라이선스</a> 계약에 따라 제공됩니다.]]></string>
+    <string name="your_rights_content4" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s의 소스 코드는 기타 다양한 무료 및 오픈 소스 <a href="%2$s">라이선스</a> 계약에 따라 제공됩니다.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the GPL
     %3$s will be replaced with a URL linking to the tracking protection wiki page (e.g. https://wiki.mozilla.org/Security/Tracking_protection#Lists) -->
-    <string name="your_rights_content5"><![CDATA[%1$s는 Disconnect, Inc에서 제공하는 차단목록에서 <a href="%2$s">GNU General Public License v3</a>를 바탕으로 자체적으로 별도로 관리하는 차단목록을 사용합니다. 자세한 내용은 <a href="%3$s">다음</a>에서 확인할 수 있습니다.]]></string>
+    <string name="your_rights_content5" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s는 Disconnect, Inc에서 제공하는 차단목록에서 <a href="%2$s">GNU General Public License v3</a>를 바탕으로 자체적으로 별도로 관리하는 차단목록을 사용합니다. 자세한 내용은 <a href="%3$s">다음</a>에서 확인할 수 있습니다.]]></string>
 
     <!-- Text shown in prompts for GeckoView -->
     <string name="gv_prompt_username_hint">사용자명</string>
@@ -825,13 +826,13 @@
     <string name="preference_studies">연구</string>
 
     <!-- Preference for studies summary-->
-    <string name="preference_studies_summary">Firefox가 때때로 연구를 설치하고 실행할 수 있습니다.</string>
+    <string name="preference_studies_summary" tools:ignore="BrandUsage">Firefox가 때때로 연구를 설치하고 실행할 수 있습니다.</string>
 
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">자세히 알아보기</string>
 
     <!-- Dialog message shown when some changes are made on studies -->
-    <string name="studies_restart_app">변경 사항을 적용하기 위해 애플리케이션이 종료됩니다</string>
+    <string name="studies_restart_app" moz:removedIn="135">변경 사항을 적용하기 위해 애플리케이션이 종료됩니다</string>
 
     <!-- Title of the remove studies button -->
     <string name="studies_remove">삭제</string>
@@ -919,9 +920,6 @@
 
     <!-- Label for the button in the snackbar that switches to the newly opened tab -->
     <string name="open_new_tab_snackbar">전환</string>
-
-    <!-- Text displayed in a notification when the user enters full screen mode -->
-    <string name="full_screen_notification">전체 화면 모드로 들어가기</string>
 
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">새탭의 링크로 즉시 전환</string>
@@ -1030,7 +1028,7 @@
 
     <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will get replaced with the name of the app (e.g. "Firefox Focus").
         Contains a button that will redirect the user to Privacy & Security Screen-->
-    <string name="errorpage_httpsonly_message2"><![CDATA[%1$s는 보안 강화를 위해 가능할 때마다 HTTPS 연결을 사용하려고 합니다.
+    <string name="errorpage_httpsonly_message2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s는 보안 강화를 위해 가능할 때마다 HTTPS 연결을 사용하려고 합니다.
      <a href="%2$s">자세히 알아보기</a> <br/><br/>
      설정 > 개인 정보 보호 &amp; 보안 > 보안에서 이 설정을 바꿀 수 있습니다.]]></string>
 
@@ -1112,4 +1110,12 @@
     <!-- This is te text of the snackbar that appears after the search widget was added successfully
     to the home screen. -->
     <string name="promote_search_widget_snackbar_message">홈 화면에 위젯이 추가됨</string>
+
+    <!-- Messages explaining how to exit fullscreen mode -->
+    <!-- Message shown to explain how to exit fullscreen mode when gesture navigation is enabled. -->
+    <!-- Localisation note: this text should be as short as possible, max 68 chars -->
+    <string name="exit_fullscreen_with_gesture_short">종료하려면, 위에서 드래그하고 뒤로 제스처를 사용하세요</string>
+    <!-- Message shown to explain how to exit fullscreen mode when using back button navigation. -->
+    <!-- Localisation note: this text should be as short as possible, max 68 chars -->
+    <string name="exit_fullscreen_with_back_button_short">종료하려면, 위에서 드래그하고 뒤로를 누르세요</string>
 </resources>

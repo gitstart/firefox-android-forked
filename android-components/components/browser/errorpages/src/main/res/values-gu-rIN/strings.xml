@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
     <!-- The button that appears at the bottom of an error page. -->
     <string name="mozac_browser_errorpages_page_refresh">ફરીથી પ્રયત્ન કરો</string>
 
@@ -110,10 +110,6 @@
     <!-- The document title and heading of an error page. -->
     <string name="mozac_browser_errorpages_unknown_host_title">સરનામું મળ્યું નથી</string>
 
-    <!-- The document title and heading of an error page. -->
-    <string name="mozac_browser_errorpages_no_internet_title">ઇન્ટરનેટ કનેક્શન નથી</string>
-    <!-- The main body text of this error page. It will be shown beneath the title -->
-    <string name="mozac_browser_errorpages_no_internet_message">તમારું નેટવર્ક કનેક્શન તપાસો અથવા થોડી ક્ષણોમાં પૃષ્ઠને ફરીથી લોડ કરવાનો પ્રયાસ કરો.</string>
     <!-- Text that will show up on the button at the bottom of the error page -->
     <string name="mozac_browser_errorpages_no_internet_refresh_button">ફરીથી લોડ કરો</string>
 
@@ -159,4 +155,5 @@
     <string name="mozac_browser_errorpages_safe_phishing_uri_title">ભ્રામક સાઇટ ઇશ્યૂ</string>
     <!-- The %1$s will be replaced by the malicious website URL-->
     <string name="mozac_browser_errorpages_safe_phishing_uri_message"><![CDATA[<p>%1$s પરના આ વેબ પૃષ્ઠને ભ્રામક સાઇટ તરીકે જાણ કરવામાં આવ્યું છે અને તમારી સુરક્ષા પસંદગીઓના આધારે અવરોધિત કરવામાં આવ્યું છે.</p>]]></string>
-</resources>
+
+    </resources>

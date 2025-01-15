@@ -54,7 +54,6 @@
     <string name="menu_remove_from_shortcuts">Fjarlægja úr flýtileiðum</string>
 
     <!-- Menu item: Shows information about features and changes that are new to this version -->
-    <string name="menu_whats_new">Nýtt á döfinni</string>
     <string name="menu_settings">Stillingar</string>
     <string name="menu_about">Um hugbúnaðinn</string>
     <string name="menu_help">Hjálp</string>
@@ -88,10 +87,12 @@
          sharing an URL. -->
     <string name="share_dialog_title">Deila með</string>
 
-    <!-- While a browsing session is active (in the foreground or background) we will show a notification
-         so that the user doesn't forget about the website still being open. This text is shown in
-         the notification. Clicking the notification will have the same effect as clicking the "erase"
-         button in the application. -->
+    <string name="notification_erase_title_android_14">Eyða vafurferli?</string>
+
+    <!-- Text shown in the notification description that pops up to remind the user that a browsing session is active
+    for Android 14+. -->
+    <string name="notification_erase_text_android_14_1">Ýttu á eða strjúktu út þessa tilkynningu til að eyða vafurferli þínum á öruggan hátt.</string>
+
     <string name="notification_erase_text">Eyða vafraferli</string>
 
     <!-- Notification action to open Focus and resume the current browsing session. -->
@@ -124,23 +125,23 @@
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
          Focus is hard coded since we can't use variables in this context.
          Do not translate or transliterate Focus.-->
-    <string name="text_selection_search_action_focus">Leita í Focus</string>
+    <string name="text_selection_search_action_focus" tools:ignore="BrandUsage">Leita í Focus</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
              Klar is hard coded since we can't use variables in this context.
              Do not translate or transliterate Klar.-->
-    <string name="text_selection_search_action_klar">Leita í Klar</string>
+    <string name="text_selection_search_action_klar" tools:ignore="BrandUsage">Leita í Klar</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
             Focus Beta is hard coded since we can't use variables in this context.
             Do not translate or transliterate Focus Beta.-->
-    <string name="text_selection_search_action_focus_beta">Leita í Focus Beta</string>
+    <string name="text_selection_search_action_focus_beta" tools:ignore="BrandUsage">Leita í Focus Beta</string>
     <!-- This is the label of an action we offer when the user selects text in other third-party apps.
           Focus Nightly is hard coded since we can't use variables in this context.
           Do not translate or transliterate Focus Nightly.-->
-    <string name="text_selection_search_action_focus_nightly">Leita í Focus næturútgáfunni</string>
+    <string name="text_selection_search_action_focus_nightly" tools:ignore="BrandUsage">Leita í Focus næturútgáfunni</string>
 
     <!-- Content of about focus. Argument 1 is the app name (Firefox Focus/Firefox Klar/etc).
          Argument 2 is the url for the learn-more link. -->
-    <string name="about_content"><![CDATA[<p>%1$s setur þig við stjórnvölinn.</p>
+    <string name="about_content" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[<p>%1$s setur þig við stjórnvölinn.</p>
 <p>Notaðu það sem huliðsvafra:
   <ul>
     <li>Leitaðu og flettu beint í forritinu</li>
@@ -493,9 +494,6 @@
 
     <string name="error_hostLookup_title">Netþjónn fannst ekki</string>
 
-    <!-- Content description (not visible, for screen readers etc.): This is the description for the close button from the new onboarding flow screen one and two -->
-    <string name="onboarding_close_button_content_description">Loka</string>
-
     <!-- New Onboarding flow first screen title -->
     <!-- %1$s will be replaced by the app name and build variant(e.g. Firefox Focus, Firefox Klar Nightly) -->
     <string name="onboarding_first_screen_title">Velkomin í %1$s</string>
@@ -585,9 +583,12 @@
     <!-- Label for a button in the "tabs tray" to erase the browsing history (closes all tabs and removes associated data). -->
     <string name="tabs_tray_action_erase">Eyða vafurferli</string>
 
+    <!-- Label for the option in the Focus "tabs tray" to clos the other tabs except the current tab. -->
+    <string name="tabs_tray_action_erase_other">Loka öðrum flipum</string>
+
     <!-- If the user decides to open the current page in another browser and if Firefox is not installed then we show this
       item in the list of browsers. Clicking it will open the app store installed on the device (usually that's Google Play). -->
-    <string name="download_firefox">Sækja Firefox</string>
+    <string name="download_firefox" tools:ignore="BrandUsage">Sækja Firefox</string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)-->
@@ -596,23 +597,23 @@
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the MPL (e.g. https://www.mozilla.org/en-US/MPL/) -->
-    <string name="your_rights_content2"><![CDATA[%1$s er þér aðgengilegt samkvæmt skilmálum <a href="%2$s">Mozilla Public License</a> og annarra notkunarleyfa opins hugbúnaðar.]]></string>
+    <string name="your_rights_content2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s er þér aðgengilegt samkvæmt skilmálum <a href="%2$s">Mozilla Public License</a> og annarra notkunarleyfa opins hugbúnaðar.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the trademark policy (e.g. https://www.mozilla.org/foundation/trademarks/policy/) -->
-    <string name="your_rights_content3"><![CDATA[Þú hefur ekki réttindi á eða leyfi til að nota vörumerki eða hefur leyfi fyrir vörumerkjum frá Mozilla-stofnunni eða öðrum aðilum, innifelur það í sér án allra takmarkana nönf eða fyrirtækismerki Mozilla, Firefox eða %1$s . Meiri upplýsingar fást <a href="%2$s">hér</a>.]]></string>
+    <string name="your_rights_content3" tools:ignore="BrandUsage,IncorrectStraightDoubleQuote"><![CDATA[Þú hefur ekki réttindi á eða leyfi til að nota vörumerki eða hefur leyfi fyrir vörumerkjum frá Mozilla-stofnunni eða öðrum aðilum, innifelur það í sér án allra takmarkana nönf eða fyrirtækismerki Mozilla, Firefox eða %1$s . Meiri upplýsingar fást <a href="%2$s">hér</a>.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the list of licenses used by the dependencies.-->
-    <string name="your_rights_content4"><![CDATA[Viðbótargrunnkóði fyrir %1$s er tiltækur með ýmsum öðrum ókeypis og opnum <a href="%2$s">hugbúnaðarleyfum</a>.]]></string>
+    <string name="your_rights_content4" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[Viðbótargrunnkóði fyrir %1$s er tiltækur með ýmsum öðrum ókeypis og opnum <a href="%2$s">hugbúnaðarleyfum</a>.]]></string>
 
     <!-- Text shown in the "Your rights" screen.
     %1$s will be replaced with the name of the app (e.g. Firefox Focus)
     %2$s will be replaced with a URL linking to the GPL
     %3$s will be replaced with a URL linking to the tracking protection wiki page (e.g. https://wiki.mozilla.org/Security/Tracking_protection#Lists) -->
-    <string name="your_rights_content5"><![CDATA[%1$s notar einnig útilokunarlista frá Disconnect, Inc. sem aðskilin og sjálfstæð verk samkvæmt <a href="%2$s">almenna GNU General Public notkunarleyfinu útg.3</a> og er tiltækt <a href="%3$s">hér</a>.]]></string>
+    <string name="your_rights_content5" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s notar einnig útilokunarlista frá Disconnect, Inc. sem aðskilin og sjálfstæð verk samkvæmt <a href="%2$s">almenna GNU General Public notkunarleyfinu útg.3</a> og er tiltækt <a href="%3$s">hér</a>.]]></string>
 
     <!-- Text shown in prompts for GeckoView -->
     <string name="gv_prompt_username_hint">Notandanafn</string>
@@ -802,13 +803,13 @@
     <string name="preference_studies">Rannsóknir</string>
 
     <!-- Preference for studies summary-->
-    <string name="preference_studies_summary">Firefox kann að setja upp og keyra rannsóknir af og til.</string>
+    <string name="preference_studies_summary" tools:ignore="BrandUsage">Firefox kann að setja upp og keyra rannsóknir af og til.</string>
 
     <!-- Learn more link for studies, links to an article for more information about studies. -->
     <string name="studies_learn_more">Fræðast meira</string>
 
     <!-- Dialog message shown when some changes are made on studies -->
-    <string name="studies_restart_app">Forritið hættir til að virkja breytingar</string>
+    <string name="studies_restart_app" moz:removedIn="135">Forritið hættir til að virkja breytingar</string>
 
     <!-- Title of the remove studies button -->
     <string name="studies_remove">Fjarlægja</string>
@@ -903,9 +904,6 @@
 
     <!-- Label for the button in the snackbar that switches to the newly opened tab -->
     <string name="open_new_tab_snackbar">Skipta</string>
-
-    <!-- Text displayed in a notification when the user enters full screen mode -->
-    <string name="full_screen_notification">Fara í fullan skjá</string>
 
     <!-- Preference for switching to a new tab immediately after opening -->
     <string name="preference_open_new_tab">Skipta strax yfir í tengil í nýjum flipa</string>
@@ -1006,7 +1004,7 @@
 
     <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will get replaced with the name of the app (e.g. "Firefox Focus").
         Contains a button that will redirect the user to Privacy & Security Screen-->
-    <string name="errorpage_httpsonly_message2"><![CDATA[%1$s reynir að nota HTTPS tengingu þegar mögulegt er til að auka öryggi.
+    <string name="errorpage_httpsonly_message2" tools:ignore="IncorrectStraightDoubleQuote"><![CDATA[%1$s reynir að nota HTTPS tengingu þegar mögulegt er til að auka öryggi.
      <a href="%2$s">Frekari upplýsingar</a> <br/><br/>
      Breyttu þessari stillingu í Stillingar > Persónuvernd og öryggi > Öryggi.]]></string>
 
@@ -1085,4 +1083,12 @@ Ef þú hefur getað tengst þessum netþjóni án vandamála áður, gæti veri
     <!-- This is te text of the snackbar that appears after the search widget was added successfully
     to the home screen. -->
     <string name="promote_search_widget_snackbar_message">Viðmótshluta bætt á upphafsskjá</string>
+
+    <!-- Messages explaining how to exit fullscreen mode -->
+    <!-- Message shown to explain how to exit fullscreen mode when gesture navigation is enabled. -->
+    <!-- Localisation note: this text should be as short as possible, max 68 chars -->
+    <string name="exit_fullscreen_with_gesture_short">Dragðu að ofan og notaðu aftur-bendingu til að hætta</string>
+    <!-- Message shown to explain how to exit fullscreen mode when using back button navigation. -->
+    <!-- Localisation note: this text should be as short as possible, max 68 chars -->
+    <string name="exit_fullscreen_with_back_button_short">Dragðu að ofan og ýttu á til baka til að hætta</string>
 </resources>

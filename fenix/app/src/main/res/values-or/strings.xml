@@ -9,6 +9,7 @@
     <!-- Label of editable text in create collection dialog for naming a new collection  -->
     <string name="tab_tray_add_new_collection_name">ନାମ</string>
 
+
     <!-- Text for the negative action button to dismiss the Close Tabs Banner. -->
     <string name="tab_tray_close_tabs_banner_negative_button_text">ବରଖାସ୍ତ କରନ୍ତୁ</string>
 
@@ -30,8 +31,6 @@
     <string name="browser_menu_library">ପାଠାଗାର</string>
     <!-- Browser menu toggle that requests a desktop site -->
     <string name="browser_menu_desktop_site">ଡେସ୍କଟପ୍ ସାଇଟ୍</string>
-    <!-- Browser menu toggle that installs a Progressive Web App shortcut to the site on the device home screen. -->
-    <string name="browser_menu_install_on_homescreen">ସ୍ଥାପନ କରନ୍ତୁ</string>
     <!-- Browser menu button that opens the find in page menu -->
     <string name="browser_menu_find_in_page">ପୃଷ୍ଠାରେ ଖୋଜି ପାଆନ୍ତୁ</string>
 
@@ -66,8 +65,6 @@
     <string name="preferences_default_search_engine">ଡିଫଲ୍ଟ ସନ୍ଧାନ ଇଞ୍ଜିନ୍</string>
     <!-- Preference for settings related to Search -->
     <string name="preferences_search">ସନ୍ଧାନ</string>
-    <!-- Preference for settings related to Search address bar -->
-    <string name="preferences_search_address_bar">ଠିକଣା ଦଣ୍ଡିକା</string>
     <!-- Preference category for advanced settings -->
     <string name="preferences_category_advanced">ବିକଶିତ</string>
     <!-- Preference category for privacy and security settings -->
@@ -138,18 +135,6 @@
      <!-- Add new device screen title -->
     <string name="sync_add_new_device_title">ଡିଭାଇସକୁ ପଠାନ୍ତୁ</string>
 
-    <!-- Onboarding theme -->
-    <!-- text for the theme picker onboarding card header -->
-    <string name="onboarding_theme_picker_header">ଆପଣଙ୍କ ଥିମ୍ ବାଛନ୍ତୁ</string>
-    <!-- Automatic theme setting (will follow device setting) -->
-    <string name="onboarding_theme_automatic_title">ସ୍ୱୟଂଚାଳିତ</string>
-    <!-- Summary of automatic theme setting (will follow device setting) -->
-    <string name="onboarding_theme_automatic_summary">ଆପଣଙ୍କ ଡିଭାଇସ୍ ସେଟିଂସ୍ ସହ ଖାପ ଖାଇଥାଏ</string>
-    <!-- Theme setting for dark mode -->
-    <string name="onboarding_theme_dark_title">ଗାଢ଼ ଥିମ୍</string>
-    <!-- Theme setting for light mode -->
-    <string name="onboarding_theme_light_title">ହାଲୁକା ଥିମ୍</string>
-
     <!-- Text shown for settings option for sign with email -->
     <string name="sign_in_with_email">ଏହା ପରିବର୍ତ୍ତେ ଇମେଲ୍ ବ୍ୟବହାର କରନ୍ତୁ</string>
 
@@ -158,8 +143,6 @@
     <string name="etp_settings">ସୁରକ୍ଷା ସେଟିଂସ୍</string>
     <!-- Preference for enhanced tracking protection for the standard protection settings -->
     <string name="preference_enhanced_tracking_protection_standard_default_1">ମାନକ (ଡିଫଲ୍ଟ)</string>
-    <!-- Preference description for enhanced tracking protection for the standard protection settings -->
-    <string name="preference_enhanced_tracking_protection_standard_description_4" moz:removedIn="114" tools:ignore="UnusedResources">ଗୋପନୀୟତା ଏବଂ କାର୍ଯ୍ୟଦକ୍ଷତା ପାଇଁ ସନ୍ତୁଳିତ। ପୃଷ୍ଠାଗୁଡିକ ସାଧାରଣ ଭାବରେ ଲୋଡ୍ ହୁଏ।</string>
     <!-- Preference for enhanced tracking protection for the strict protection settings -->
     <string name="preference_enhanced_tracking_protection_strict">କଡା</string>
 
@@ -185,13 +168,11 @@
 
     <!-- label shown when there are not site exceptions to show in the site exception settings -->
     <string name="no_site_exceptions">କୌଣସି ସାଇଟ୍ ବ୍ୟତିକ୍ରମ ହୋଇନାହିଁ</string>
-    <!--  The error message in add/edit login view when password field is blank. -->
-    <string name="saved_login_password_required">ପାସ୍‍ୱାର୍ଡ଼ ଆବଶ୍ୟକ</string>
-
-    <!-- Button caption to confirm the renaming of the top site. -->
-	<string name="top_sites_rename_dialog_ok">ଠିକ୍ ଅଛି</string>
 
     <!-- Caption for describing a certain feature. The placeholder is for a clickable text (eg: Learn more) which will load an url in a new tab when clicked.  -->
-    <string name="pocket_stories_feature_caption">Firefox ପରିବାରର ଏକ ଅଂଶ। %s</string>
+    <string name="pocket_stories_feature_caption" tools:ignore="BrandUsage">Firefox ପରିବାରର ଏକ ଅଂଶ। %s</string>
+
+    <!-- Translations feature-->
+
 
     </resources>
